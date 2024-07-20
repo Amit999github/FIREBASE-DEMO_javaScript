@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireBase WebPage</title>
+<!-- ================= this link for to add a google font lato ========================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+<!-- ========================== tis is for google location  icon ======================== -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!--===================================== this is our custom style sheet ======================== -->
+<link rel="stylesheet" href="style.css">
+<!-- this comment is to link a font awasom CDN ======================-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+</head>
+<body>
+    <h1 class="heading">FireBase  Demo</h1>
+    <div class="container">
+        <h2 class="sub_heading">your current location <i class="fa-solid fa-location-dot location"></i><span class="reading-location" id="desRead"> Searching...</span></h2>
+        <div class="sub_container">
+            <div class="weather_info humidity-info">
+                <i class="fa-solid fa-droplet humidity-icon icon"></i>
+                <h4>Humidity</h4>
+                <p><span class="read-value" id="reading-float">00</span> %</p>
+            </div>
+            <div class="weather_info temperature-info">
+                <i class="fa-solid fa-temperature-low temp-icon icon"></i>
+                <h4>Temperature</h4>
+                <p><span class="read-value" id="reading-int">00</span> <sup>o</sup>C</p>
+            </div>    
+        </div>
+    </div>
+    <!--=========================q`'
+     '= firebase configuration file ====================== -->
+    <script src="index.js"></script>
+    <!--================================ custom script file========================================== -->
+    <script src="custom.js"></script>
+</body>
+</html>
